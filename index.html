@@ -514,7 +514,28 @@ section.infraestrutura{padding:64px 0;border-bottom:1px solid var(--border);}
           <label for="telefone">Telefone</label>
           <input type="tel" id="telefone" name="telefone">
         </div>
-        <div>
+          <div>
+  <label for="perfil">Perfil</label>
+  <select id="perfil" name="perfil" required>
+    <option value="">Selecione...</option>
+    <option value="Trading / Big Trader">Trading / Big Trader</option>
+    <option value="Agrodealer / Multinacional">Agrodealer / Multinacional</option>
+    <option value="Produtor Rural">Produtor Rural</option>
+    <option value="Fundo de Investimento">Fundo de Investimento</option>
+    <option value="Outro">Outro</option>
+  </select>
+</div>
+<div>
+  <label for="porte">Porte da operação (hectares)</label>
+  <select id="porte" name="porte" required>
+    <option value="">Selecione...</option>
+    <option value="Ate 5.000 ha">Até 5.000 ha</option>
+    <option value="5.000 a 20.000 ha">5.000 a 20.000 ha</option>
+    <option value="20.000 a 50.000 ha">20.000 a 50.000 ha</option>
+    <option value="Acima de 50.000 ha">Acima de 50.000 ha</option>
+    <option value="Nao se aplica (fundo/investidor)">Não se aplica (fundo/investidor)</option>
+  </select>
+</div>
           <label for="mensagem">Mensagem</label>
           <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o interesse na aquisição..."></textarea>
         </div>
