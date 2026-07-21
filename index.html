@@ -22,7 +22,7 @@
     background:var(--bg);
     color:var(--text);
     line-height:1.6;
-  }
+  }CA
   a{color:var(--orange);}
   .container{max-width:1080px;margin:0 auto;padding:0 24px;}
 
@@ -96,6 +96,37 @@
   .card-numero i{font-size:28px;color:var(--orange);margin-bottom:10px;display:block;}
   .card-numero .valor{font-size:26px;font-weight:700;color:#fff;}
   .card-numero .label{font-size:13px;color:var(--text-dim);margin-top:4px;}
+  /* PUBLICO-ALVO */
+section.publico-alvo{padding:64px 0;border-bottom:1px solid var(--border);}
+.grid-publico{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+  gap:24px;
+}
+.card-publico{
+  background:var(--bg-elev);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:28px 24px;
+  text-align:left;
+}
+.card-publico i{font-size:26px;color:var(--orange);margin-bottom:14px;display:block;}
+.card-publico h3{font-size:16px;color:#fff;margin-bottom:8px;}
+.card-publico p{font-size:14px;color:var(--text-dim);line-height:1.5;}
+
+/* INFRAESTRUTURA */
+section.infraestrutura{padding:64px 0;border-bottom:1px solid var(--border);}
+.lista-infra{list-style:none;max-width:700px;padding:0;margin:0;}
+.lista-infra li{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 0;
+  border-bottom:1px solid var(--border);
+  color:#fff;
+  font-size:15px;
+}
+.lista-infra i{color:var(--orange);font-size:18px;}
 
   /* LOCALIZAÇÃO */
   section.localizacao{padding:64px 0;border-bottom:1px solid var(--border);}
@@ -310,7 +341,48 @@
     </div>
   </div>
 </section>
+<section class="publico-alvo">
+  <div class="container">
+    <h2 class="section-title">Feito para quem pensa em <span>escala</span></h2>
+    <p class="section-lead">Infraestrutura crítica para big traders, agrodealers e produtores de grande porte.</p>
 
+    <div class="grid-publico">
+      <div class="card-publico">
+        <i class="ri-plant-line"></i>
+        <h3>Big Traders e Tradings</h3>
+        <p>Ponto de armazenagem estratégico no cruzamento logístico do Centro-Oeste.</p>
+      </div>
+      <div class="card-publico">
+        <i class="ri-building-4-line"></i>
+        <h3>Agrodealers Multinacionais</h3>
+        <p>Base física para centralizar armazenagem, pesagem e logística de insumos.</p>
+      </div>
+      <div class="card-publico">
+        <i class="ri-truck-line"></i>
+        <h3>Produtores de 5.000 a 100.000 ha</h3>
+        <p>Capacidade própria de armazenagem, reduzindo custo de frete na safra.</p>
+      </div>
+      <div class="card-publico">
+        <i class="ri-line-chart-line"></i>
+        <h3>Fundos e Investidores</h3>
+        <p>Ativo real com demanda estrutural garantida pelo agronegócio brasileiro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="infraestrutura">
+  <div class="container">
+    <h2 class="section-title">Infraestrutura pronta para <span>operar em escala</span></h2>
+    <ul class="lista-infra">
+      <li><i class="ri-checkbox-circle-fill"></i> Sistema de silos para soja e grãos diversos</li>
+      <li><i class="ri-checkbox-circle-fill"></i> Estrutura de pesagem industrial</li>
+      <li><i class="ri-checkbox-circle-fill"></i> Capacidade de recepção e expedição de grandes volumes</li>
+      <li><i class="ri-checkbox-circle-fill"></i> Cruzamento Jataí / Rio Verde / Goiânia / Uberlândia</li>
+      <li><i class="ri-checkbox-circle-fill"></i> 40.000 m² com potencial de expansão</li>
+    </ul>
+  </div>
+</section>
 <section class="localizacao">
   <div class="container">
     <h2 class="section-title">Localização <span>estratégica</span></h2>
