@@ -1,586 +1,486 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Paranagel — Hub Logístico do Cerrado | Complexo de Silos à Venda</title>
-<meta name="description" content="Complexo de armazenagem Paranagel Armazéns Ltda à venda: 40.000 m², silos, localização estratégica no trevo Jataí / Rio Verde / Goiânia / Uberlândia.">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
-<style>
-  :root{
-    --bg:#0f172a;
-    --bg-elev:#161f38;
-    --bg-elev-2:#1c2846;
-    --orange:#F97316;
-    --text:#e2e8f0;
-    --text-dim:#94a3b8;
-    --border:#243147;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.6;
-  }CA
-  a{color:var(--orange);}
-  .container{max-width:1080px;margin:0 auto;padding:0 24px;}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  /* HERO */
-  header.hero{
-    background:linear-gradient(180deg, var(--bg-elev) 0%, var(--bg) 100%);
-    border-bottom:1px solid var(--border);
-    padding:64px 0 56px;
-    text-align:center;
-  }
-  .eyebrow{
-    display:inline-flex;
-    align-items:center;
-    gap:6px;
-    color:var(--orange);
-    font-size:13px;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    background:rgba(249,115,22,0.12);
-    padding:6px 14px;
-    border-radius:999px;
-    margin-bottom:20px;
-  }
-  h1{
-    font-size:clamp(28px, 5vw, 48px);
-    color:#fff;
-    margin-bottom:16px;
-  }
-  h1 span{color:var(--orange);}
-  .subtitle{
-    color:var(--text-dim);
-    font-size:18px;
-    max-width:640px;
-    margin:0 auto 32px;
-  }
-  .hero-cta{
-    display:flex;
-    gap:16px;
-    justify-content:center;
-    flex-wrap:wrap;
-  }
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:14px 28px;
-    border-radius:8px;
-    font-weight:600;
-    text-decoration:none;
-    font-size:15px;
-    transition:opacity .15s;
-  }
-  .btn:hover{opacity:0.88;}
-  .btn-primary{background:var(--orange);color:#0f172a;}
-  .btn-secondary{background:transparent;border:1px solid var(--border);color:var(--text);}
+  <!-- STAGING: trocar para index,follow somente após aprovação -->
+  <meta name="robots" content="noindex,nofollow">
 
-  /* NUMEROS */
-  section.numeros{padding:56px 0;border-bottom:1px solid var(--border);}
-  .grid-numeros{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
-    gap:24px;
-  }
-  .card-numero{
-    background:var(--bg-elev);
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:24px;
-    text-align:center;
-  }
-  .card-numero i{font-size:28px;color:var(--orange);margin-bottom:10px;display:block;}
-  .card-numero .valor{font-size:26px;font-weight:700;color:#fff;}
-  .card-numero .label{font-size:13px;color:var(--text-dim);margin-top:4px;}
-  /* PUBLICO-ALVO */
-section.publico-alvo{padding:64px 0;border-bottom:1px solid var(--border);}
-.grid-publico{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  gap:24px;
-}
-.card-publico{
-  background:var(--bg-elev);
-  border:1px solid var(--border);
-  border-radius:12px;
-  padding:28px 24px;
-  text-align:left;
-}
-.card-publico i{font-size:26px;color:var(--orange);margin-bottom:14px;display:block;}
-.card-publico h3{font-size:16px;color:#fff;margin-bottom:8px;}
-.card-publico p{font-size:14px;color:var(--text-dim);line-height:1.5;}
+  <title>Paranagel | Complexo de Armazenagem e Logística em Goiás</title>
 
-/* INFRAESTRUTURA */
-section.infraestrutura{padding:64px 0;border-bottom:1px solid var(--border);}
-.lista-infra{list-style:none;max-width:700px;padding:0;margin:0;}
-.lista-infra li{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:14px 0;
-  border-bottom:1px solid var(--border);
-  color:#fff;
-  font-size:15px;
-}
-.lista-infra i{color:var(--orange);font-size:18px;}
+  <meta name="description"
+        content="Complexo estratégico de armazenagem e logística localizado em Paranaiguara, Goiás. Conheça a estrutura, localização e documentação comercial da Paranagel.">
 
-  /* LOCALIZAÇÃO */
-  section.localizacao{padding:64px 0;border-bottom:1px solid var(--border);}
-  .section-title{
-    font-size:28px;
-    color:#fff;
-    margin-bottom:12px;
-  }
-  .section-title span{color:var(--orange);}
-  .section-lead{color:var(--text-dim);margin-bottom:32px;max-width:680px;}
-  .rotas{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-  }
-  .rota-tag{
-    background:var(--bg-elev);
-    border:1px solid var(--border);
-    padding:10px 18px;
-    border-radius:8px;
-    font-size:14px;
-    display:flex;
-    align-items:center;
-    gap:8px;
-  }
-  .rota-tag i{color:var(--orange);}
-  .mapa-embed{
-    margin-top:32px;
-    border-radius:12px;
-    overflow:hidden;
-    border:1px solid var(--border);
-    aspect-ratio:16/8;
-  }
-  .mapa-embed iframe{width:100%;height:100%;border:0;filter:grayscale(0.3) invert(0.92) contrast(0.85);}
+  <meta property="og:title"
+        content="Paranagel | Complexo Estratégico de Armazenagem e Logística">
 
-  /* GALERIA */
-  section.galeria{padding:64px 0;border-bottom:1px solid var(--border);}
-  .grid-galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(220px, 1fr));
-    gap:16px;
-    margin-bottom:32px;
-  }
-  .placeholder-foto{
-    aspect-ratio:4/3;
-    background:var(--bg-elev);
-    border:1px dashed var(--border);
-    border-radius:10px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    color:var(--text-dim);
-    font-size:13px;
-    gap:8px;
-  }
-  .placeholder-foto i{font-size:24px;}
-  .grid-galeria img{
-    width:100%;
-    aspect-ratio:4/3;
-    object-fit:cover;
-    border-radius:10px;
-    border:1px solid var(--border);
-    display:block;
-    cursor:zoom-in;
-    transition:transform .15s;
-  }
-  .grid-galeria img:hover{transform:scale(1.02);}
-  .grid-videos{
-    display:grid;
-    grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
-    gap:16px;
-  }
-  .placeholder-video{
-    aspect-ratio:16/9;
-    background:var(--bg-elev);
-    border:1px dashed var(--border);
-    border-radius:10px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    color:var(--text-dim);
-    font-size:13px;
-    gap:8px;
-  }
-  .placeholder-video i{font-size:32px;color:var(--orange);}
+  <meta property="og:description"
+        content="Ativo agroindustrial e logístico em Paranaiguara, Goiás.">
 
-  /* DOSSIÊ */
-  section.dossie{padding:64px 0;border-bottom:1px solid var(--border);}
-  .dossie-box{
-    background:var(--bg-elev);
-    border:1px solid var(--border);
-    border-radius:12px;
-    padding:32px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:24px;
-    flex-wrap:wrap;
-  }
-  .dossie-box p{color:var(--text-dim);max-width:520px;}
+  <meta property="og:type" content="website">
 
-  /* COMISSÃO / TRANSPARÊNCIA */
-  section.comissao{padding:48px 0;border-bottom:1px solid var(--border);}
-  .aviso-comissao{
-    background:rgba(249,115,22,0.08);
-    border:1px solid rgba(249,115,22,0.3);
-    border-radius:12px;
-    padding:24px 28px;
-    display:flex;
-    gap:16px;
-    align-items:flex-start;
-  }
-  .aviso-comissao i{color:var(--orange);font-size:24px;margin-top:2px;}
-  .aviso-comissao strong{color:#fff;}
-  .aviso-comissao p{color:var(--text-dim);font-size:14px;}
+  <meta name="theme-color" content="#0a0d0f">
 
-  /* CONTATO */
-  section.contato{padding:64px 0;}
-  .contato-box{
-    background:var(--bg-elev);
-    border:1px solid var(--border);
-    border-radius:16px;
-    padding:40px;
-    text-align:center;
-  }
-  form{
-    display:grid;
-    gap:16px;
-    max-width:480px;
-    margin:24px auto 0;
-    text-align:left;
-  }
-  label{font-size:13px;color:var(--text-dim);margin-bottom:4px;display:block;}
-  input, textarea{
-    width:100%;
-    padding:12px 14px;
-    background:var(--bg);
-    border:1px solid var(--border);
-    border-radius:8px;
-    color:var(--text);
-    font-size:14px;
-    font-family:inherit;
-  }
-  textarea{min-height:100px;resize:vertical;}
-  .contato-info{
-    display:flex;
-    justify-content:center;
-    gap:32px;
-    margin-top:24px;
-    flex-wrap:wrap;
-    color:var(--text-dim);
-    font-size:14px;
-  }
-  .contato-info a{color:var(--text);}
-  .contato-info i{color:var(--orange);margin-right:6px;}
-
-  footer{
-    padding:32px 0;
-    text-align:center;
-    color:var(--text-dim);
-    font-size:13px;
-  }
-
-  @media (max-width:640px){
-    .dossie-box{flex-direction:column;align-items:flex-start;}
-  }
-</style>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="container">
-    <span class="eyebrow"><i class="ri-building-2-line"></i> Oportunidade de Investimento</span>
-    <h1><span style="text-transform:uppercase; letter-spacing:0.03em;">Paranagel</span> — <span>Hub Logístico</span> do Cerrado</h1>
-    <p class="subtitle">
-      Complexo de armazenagem com 40.000 m², localizado no cruzamento estratégico
-      entre Jataí, Rio Verde, Goiânia e Uberlândia — coração logístico do
-      agronegócio brasileiro.
-    </p>
-    <div class="hero-cta">
-      <a href="#contato" class="btn btn-primary"><i class="ri-mail-send-line"></i> Solicitar Dossiê Completo</a>
-      <a href="#galeria" class="btn btn-secondary"><i class="ri-image-2-line"></i> Ver Fotos e Vídeos</a>
-    </div>
+<header class="header">
+  <div class="container header-inner">
+
+    <a href="#inicio" class="brand" aria-label="Paranagel">
+      <img
+        src="assets/images/logo.svg"
+        width="280"
+        height="80"
+        alt="Paranagel">
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#ativo">O ativo</a>
+      <a href="#estrutura">Estrutura</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#documentos">Dossiê</a>
+    </nav>
+
+    <a class="btn btn-small btn-accent"
+       href="#documentos">
+       Solicitar informações
+    </a>
+
   </div>
 </header>
 
-<section class="numeros">
-  <div class="container">
-    <div class="grid-numeros">
-      <div class="card-numero">
-        <i class="ri-ruler-2-line"></i>
-        <div class="valor">40.000 m²</div>
-        <div class="label">Área total do complexo</div>
-      </div>
-      <div class="card-numero">
-        <i class="ri-building-4-line"></i>
-        <div class="valor">Silos</div>
-        <div class="label">Estrutura de armazenagem</div>
-      </div>
-      <div class="card-numero">
-        <i class="ri-money-dollar-circle-line"></i>
-        <div class="valor">R$ 30.000.000</div>
-        <div class="label">Valor de venda</div>
-      </div>
-      <div class="card-numero">
-        <i class="ri-map-pin-line"></i>
-        <div class="valor">Trevo Estratégico</div>
-        <div class="label">Jataí / Rio Verde / Goiânia / Uberlândia</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="publico-alvo">
-  <div class="container">
-    <h2 class="section-title">Feito para quem pensa em <span>escala</span></h2>
-    <p class="section-lead">Infraestrutura crítica para big traders, agrodealers e produtores de grande porte.</p>
 
-    <div class="grid-publico">
-      <div class="card-publico">
-        <i class="ri-plant-line"></i>
-        <h3>Big Traders e Tradings</h3>
-        <p>Ponto de armazenagem estratégico no cruzamento logístico do Centro-Oeste.</p>
-      </div>
-      <div class="card-publico">
-        <i class="ri-building-4-line"></i>
-        <h3>Agrodealers Multinacionais</h3>
-        <p>Base física para centralizar armazenagem, pesagem e logística de insumos.</p>
-      </div>
-      <div class="card-publico">
-        <i class="ri-truck-line"></i>
-        <h3>Produtores de 5.000 a 100.000 ha</h3>
-        <p>Capacidade própria de armazenagem, reduzindo custo de frete na safra.</p>
-      </div>
-      <div class="card-publico">
-        <i class="ri-line-chart-line"></i>
-        <h3>Fundos e Investidores</h3>
-        <p>Ativo real com demanda estrutural garantida pelo agronegócio brasileiro.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<main>
 
-<section class="infraestrutura">
-  <div class="container">
-    <h2 class="section-title">Infraestrutura pronta para <span>operar em escala</span></h2>
-    <ul class="lista-infra">
-      <li><i class="ri-checkbox-circle-fill"></i> Sistema de silos para soja e grãos diversos</li>
-      <li><i class="ri-checkbox-circle-fill"></i> Estrutura de pesagem industrial</li>
-      <li><i class="ri-checkbox-circle-fill"></i> Capacidade de recepção e expedição de grandes volumes</li>
-      <li><i class="ri-checkbox-circle-fill"></i> Cruzamento Jataí / Rio Verde / Goiânia / Uberlândia</li>
-      <li><i class="ri-checkbox-circle-fill"></i> 40.000 m² com potencial de expansão</li>
-    </ul>
-  </div>
-</section>
-<section class="localizacao">
-  <div class="container">
-    <h2 class="section-title">Localização <span>estratégica</span></h2>
-    <p class="section-lead">
-      A propriedade da Paranagel Armazéns Ltda está situada no entroncamento
-      viário que conecta quatro dos principais polos agrícolas e urbanos do
-      Centro-Oeste, posicionando o complexo como ponto natural de logística
-      e escoamento de grãos.
-    </p>
-    <div class="rotas">
-      <span class="rota-tag"><i class="ri-navigation-line"></i> Jataí (GO)</span>
-      <span class="rota-tag"><i class="ri-navigation-line"></i> Rio Verde (GO)</span>
-      <span class="rota-tag"><i class="ri-navigation-line"></i> Goiânia (GO)</span>
-      <span class="rota-tag"><i class="ri-navigation-line"></i> Uberlândia (MG)</span>
-    </div>
-    <!--
-      Substitua o endereço abaixo pelo endereço exato do imóvel para
-      centralizar o mapa corretamente.
-    -->
-    <div class="mapa-embed">
-      <iframe
-        loading="lazy"
-        src="https://www.google.com/maps?q=Jata%C3%AD%2C+GO&output=embed">
-      </iframe>
-    </div>
-  </div>
-</section>
+<!-- HERO -->
+<section class="hero" id="inicio">
 
-<section class="galeria" id="galeria">
-  <div class="container">
-    <h2 class="section-title">Fotos e <span>vídeos</span></h2>
-    <p class="section-lead">
-      Registro visual do complexo — fotos aéreas e terrestres da estrutura de
-      silos, pátios e acessos. Vídeos completos disponíveis mediante
-      solicitação.
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+
+    <span class="eyebrow">
+      PARANAIGUARA · GOIÁS
+    </span>
+
+    <h1>
+      Complexo estratégico de
+      <span>armazenagem e logística</span>
+      no coração do agronegócio.
+    </h1>
+
+    <p class="hero-text">
+      Estrutura agroindustrial posicionada em uma região de forte
+      circulação agrícola e conexão com importantes corredores
+      produtivos de Goiás e do Triângulo Mineiro.
     </p>
 
-    <!--
-      GALERIA DE FOTOS REAIS
-      Pra adicionar mais fotos: copie um bloco <img ...> abaixo e cole outro
-      igual, trocando o número do arquivo (foto-14.jpg, foto-15.jpg...) e
-      colocando o arquivo correspondente dentro de assets/fotos/.
-    -->
-    <div class="grid-galeria" id="grid-fotos">
-      <img src="assets/fotos/foto-01.jpg" alt="Complexo Paranagel - foto 1" loading="lazy">
-      <img src="assets/fotos/foto-02.jpg" alt="Complexo Paranagel - foto 2" loading="lazy">
-      <img src="assets/fotos/foto-03.jpg" alt="Complexo Paranagel - foto 3" loading="lazy">
-      <img src="assets/fotos/foto-04.jpg" alt="Complexo Paranagel - foto 4" loading="lazy">
-      <img src="assets/fotos/foto-05.jpg" alt="Complexo Paranagel - foto 5" loading="lazy">
-      <img src="assets/fotos/foto-06.jpg" alt="Complexo Paranagel - foto 6" loading="lazy">
-      <img src="assets/fotos/foto-07.jpg" alt="Complexo Paranagel - foto 7" loading="lazy">
-      <img src="assets/fotos/foto-08.jpg" alt="Complexo Paranagel - foto 8" loading="lazy">
-      <img src="assets/fotos/foto-09.jpg" alt="Complexo Paranagel - foto 9" loading="lazy">
-      <img src="assets/fotos/foto-10.jpg" alt="Complexo Paranagel - foto 10" loading="lazy">
-      <img src="assets/fotos/foto-11.jpg" alt="Complexo Paranagel - foto 11" loading="lazy">
-      <img src="assets/fotos/foto-12.jpg" alt="Complexo Paranagel - foto 12" loading="lazy">
-      <img src="assets/fotos/foto-13.jpg" alt="Complexo Paranagel - foto 13" loading="lazy">
+    <div class="hero-actions">
+
+      <a class="btn btn-accent"
+         href="#documentos">
+        Ver dossiê técnico
+      </a>
+
+      <a class="btn btn-outline"
+         href="#galeria">
+        Conhecer o complexo
+      </a>
+
     </div>
 
-    <!--
-      SUBSTITUIÇÃO DOS VÍDEOS:
-      1. Coloque os arquivos em assets/videos/ (ex: video-01.mp4)
-      2. Troque cada <div class="placeholder-video"> por:
-         <video controls poster="assets/fotos/foto-01.jpg">
-           <source src="assets/videos/video-01.mp4" type="video/mp4">
-         </video>
-    -->
-    <div class="grid-videos" id="grid-videos">
-      <!-- 2 placeholders de vídeo -->
-    </div>
-  </div>
-</section>
+    <div class="hero-data">
 
-<section class="dossie">
-  <div class="container">
-    <div class="dossie-box">
       <div>
-        <h2 class="section-title" style="margin-bottom:8px;">Dossiê completo</h2>
-        <p>
-          Documentação detalhada do imóvel — matrícula, planta do complexo,
-          capacidade de armazenagem por silo, histórico da operação e
-          condições de negociação — disponível sob solicitação e assinatura
-          de termo de confidencialidade (NDA), quando aplicável.
-        </p>
+        <small>VALOR DE REFERÊNCIA</small>
+        <strong>R$ 30 milhões</strong>
+        <span>Condições negociáveis</span>
       </div>
-      <a href="#contato" class="btn btn-primary"><i class="ri-file-text-line"></i> Solicitar Dossiê</a>
-    </div>
-  </div>
-</section>
 
-<section class="comissao">
-  <div class="container">
-    <div class="aviso-comissao">
-      <i class="ri-information-line"></i>
       <div>
-        <strong>Intermediação da venda</strong>
-        <p>
-          Esta oferta é intermediada por Gustavo Paula Santos, representante
-          comercial autorizado pelo proprietário Hélio Soares de Paula
-          (Paranagel Armazéns Ltda), com comissão de 3% (três por cento)
-          sobre o valor efetivo da venda, a ser paga pelo vendedor conforme
-          acordo de intermediação vigente. Interessados devem tratar
-          diretamente com o intermediário para todas as etapas da
-          negociação.
-        </p>
+        <small>ÁREA COMERCIAL DIVULGADA</small>
+        <strong>Aprox. 40.000 m²</strong>
+        <span>Complexo industrial e logístico</span>
       </div>
+
+      <div>
+        <small>LOCALIZAÇÃO</small>
+        <strong>Paranaiguara</strong>
+        <span>Goiás</span>
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
-<section class="contato" id="contato">
+
+<!-- O ATIVO -->
+<section class="section" id="ativo">
+
   <div class="container">
-    <div class="contato-box">
-      <h2 class="section-title">Interessado <span>na oportunidade?</span></h2>
-      <p class="section-lead" style="margin:0 auto;">
-        Preencha o formulário abaixo ou envie um e-mail com sua identificação
-        e intenção — retornamos com o dossiê completo e agenda de visita.
+
+    <div class="section-heading">
+      <span class="eyebrow dark">O ATIVO</span>
+
+      <h2>
+        Infraestrutura existente.
+        Localização estratégica.
+      </h2>
+
+      <p>
+        A Paranagel é apresentada como uma oportunidade para grupos
+        que avaliam expansão em armazenagem, logística,
+        agroindústria ou ativos operacionais ligados ao agronegócio.
       </p>
-      <form action="mailto:dgustavopaula@gmail.com" method="POST" enctype="text/plain">
-        <div>
-          <label for="nome">Nome / Empresa</label>
-          <input type="text" id="nome" name="nome" required>
-        </div>
-        <div>
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-          <label for="telefone">Telefone</label>
-          <input type="tel" id="telefone" name="telefone">
-        </div>
-          <div>
-  <label for="perfil">Perfil</label>
-  <select id="perfil" name="perfil" required>
-    <option value="">Selecione...</option>
-    <option value="Trading / Big Trader">Trading / Big Trader</option>
-    <option value="Agrodealer / Multinacional">Agrodealer / Multinacional</option>
-    <option value="Produtor Rural">Produtor Rural</option>
-    <option value="Fundo de Investimento">Fundo de Investimento</option>
-    <option value="Outro">Outro</option>
-  </select>
-</div>
-<div>
-  <label for="porte">Porte da operação (hectares)</label>
-  <select id="porte" name="porte" required>
-    <option value="">Selecione...</option>
-    <option value="Ate 5.000 ha">Até 5.000 ha</option>
-    <option value="5.000 a 20.000 ha">5.000 a 20.000 ha</option>
-    <option value="20.000 a 50.000 ha">20.000 a 50.000 ha</option>
-    <option value="Acima de 50.000 ha">Acima de 50.000 ha</option>
-    <option value="Nao se aplica (fundo/investidor)">Não se aplica (fundo/investidor)</option>
-  </select>
-</div>
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o interesse na aquisição..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="justify-content:center;">
-          <i class="ri-send-plane-line"></i> Enviar solicitação
-        </button>
-      </form>
-      <div class="contato-info">
-        <span><i class="ri-mail-line"></i><a href="mailto:dgustavopaula@gmail.com">dgustavopaula@gmail.com</a></span>
-        <span><i class="ri-whatsapp-line"></i><a href="https://wa.me/556484114811" target="_blank" rel="noopener">Hélio Soares — (64) 8411-4811</a></span>
-        <span><i class="ri-user-line"></i> Gustavo Paula Santos — Intermediação (3% de comissão)</span>
-        <span><i class="ri-whatsapp-line"></i><a href="https://wa.me/5564992035821" target="_blank" rel="noopener">(64) 99203-5821</a></span>
-        <span><i class="ri-global-line"></i><a href="https://gustavopaulasantos.com.br" target="_blank" rel="noopener">gustavopaulasantos.com.br</a></span>
-      </div>
     </div>
+
+    <div class="features">
+
+      <article class="feature">
+        <span>01</span>
+        <h3>Armazenagem</h3>
+        <p>
+          Estruturas industriais destinadas às operações de
+          armazenagem e movimentação de produtos agrícolas.
+        </p>
+      </article>
+
+      <article class="feature">
+        <span>02</span>
+        <h3>Logística</h3>
+        <p>
+          Posicionamento regional com acesso aos corredores que
+          conectam Paranaiguara, São Simão, Rio Verde,
+          Jataí e Uberlândia.
+        </p>
+      </article>
+
+      <article class="feature">
+        <span>03</span>
+        <h3>Potencial estratégico</h3>
+        <p>
+          Ativo adequado para análise por operadores,
+          grupos agroindustriais, investidores e empresas
+          com estratégia de expansão.
+        </p>
+      </article>
+
+    </div>
+
   </div>
+
 </section>
 
-<footer>
-  <div class="container">
-    Paranaiguara Armazéns Gerais Ltda ("Paranagel") — CNPJ 02.097.558/0001-62 ·
-    Av. Paranaíba, Paranaiguara - GO, 75.880-000<br>
-    Proprietário: Hélio Soares de Paula — WhatsApp (64) 8411-4811 ·
-    Intermediação: Gustavo Paula Santos (3% de comissão) — WhatsApp (64) 99203-5821 ·
-    gustavopaulasantos.com.br
+
+<!-- ESTRUTURA -->
+<section class="section section-dark" id="estrutura">
+
+  <div class="container split">
+
+    <div class="split-image">
+      <img
+        src="assets/images/foto-01.jpg"
+        width="1200"
+        height="800"
+        alt="Estrutura do complexo Paranagel"
+        loading="lazy">
+    </div>
+
+    <div class="split-copy">
+
+      <span class="eyebrow">ESTRUTURA</span>
+
+      <h2>
+        Um ativo físico pronto para ser analisado.
+      </h2>
+
+      <p>
+        A avaliação comercial deve considerar a infraestrutura
+        existente, a localização, os acessos, o potencial de uso
+        e a estratégia do comprador.
+      </p>
+
+      <ul class="check-list">
+        <li>Complexo agroindustrial existente</li>
+        <li>Estrutura de armazenagem</li>
+        <li>Áreas operacionais e de circulação</li>
+        <li>Acesso para veículos pesados</li>
+        <li>Inserção em região produtora de grãos</li>
+        <li>Documentação disponível para análise qualificada</li>
+      </ul>
+
+    </div>
+
   </div>
+
+</section>
+
+
+<!-- GALERIA -->
+<section class="section" id="galeria">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow dark">GALERIA</span>
+      <h2>Conheça a Paranagel.</h2>
+      <p>
+        Fotografias reais do ativo disponíveis no material comercial.
+      </p>
+    </div>
+
+    <div class="gallery">
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-01.jpg" alt="Paranagel foto 1" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-02.jpg" alt="Paranagel foto 2" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-03.jpg" alt="Paranagel foto 3" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-04.jpg" alt="Paranagel foto 4" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-05.jpg" alt="Paranagel foto 5" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-06.jpg" alt="Paranagel foto 6" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-07.jpg" alt="Paranagel foto 7" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-08.jpg" alt="Paranagel foto 8" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-09.jpg" alt="Paranagel foto 9" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-10.jpg" alt="Paranagel foto 10" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-11.jpg" alt="Paranagel foto 11" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-12.jpg" alt="Paranagel foto 12" loading="lazy">
+      </button>
+
+      <button class="gallery-item">
+        <img src="assets/images/foto-13.jpg" alt="Paranagel foto 13" loading="lazy">
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- LOCALIZAÇÃO -->
+<section class="section section-soft" id="localizacao">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow dark">LOCALIZAÇÃO</span>
+      <h2>Paranaiguara, Goiás.</h2>
+
+      <p>
+        Região conectada aos mercados agrícolas do sudoeste goiano
+        e ao eixo São Simão–Quirinópolis–Rio Verde,
+        além da ligação com o Triângulo Mineiro.
+      </p>
+    </div>
+
+    <div class="location-card">
+
+      <div>
+        <small>MUNICÍPIO</small>
+        <strong>Paranaiguara</strong>
+      </div>
+
+      <div>
+        <small>ESTADO</small>
+        <strong>Goiás</strong>
+      </div>
+
+      <div>
+        <small>ENDEREÇO COMERCIAL</small>
+        <strong>Av. Paranaíba</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- DOCUMENTOS -->
+<section class="section section-cta" id="documentos">
+
+  <div class="container cta-box">
+
+    <div>
+
+      <span class="eyebrow">ANÁLISE DO ATIVO</span>
+
+      <h2>
+        Quer avaliar a Paranagel com mais profundidade?
+      </h2>
+
+      <p>
+        Consulte o material comercial e avance para uma
+        conversa reservada sobre condições, documentação
+        e processo de aquisição.
+      </p>
+
+    </div>
+
+    <div class="cta-actions">
+
+      <a class="btn btn-accent"
+         href="assets/docs/dossye-paranagel.pdf"
+         target="_blank"
+         rel="noopener noreferrer">
+        Abrir dossiê
+      </a>
+
+      <button
+        class="btn btn-outline"
+        id="whatsappButton"
+        type="button">
+        Falar sobre aquisição
+      </button>
+
+      <small id="contactStatus">
+        Canal direto em configuração.
+      </small>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+<section class="section">
+
+  <div class="container faq-wrap">
+
+    <div class="section-heading">
+      <span class="eyebrow dark">PERGUNTAS FREQUENTES</span>
+      <h2>Informações iniciais.</h2>
+    </div>
+
+    <details>
+      <summary>Qual é o valor de referência?</summary>
+      <p>
+        O valor comercial de referência apresentado é de
+        R$ 30 milhões, sujeito a negociação e às condições
+        da operação.
+      </p>
+    </details>
+
+    <details>
+      <summary>É possível analisar documentação?</summary>
+      <p>
+        Sim. O dossiê comercial pode ser consultado nesta página.
+        Documentos adicionais devem ser disponibilizados conforme
+        o avanço da análise e da negociação.
+      </p>
+    </details>
+
+    <details>
+      <summary>Quem pode ter interesse no ativo?</summary>
+      <p>
+        O ativo pode ser analisado por operadores de armazenagem,
+        empresas agroindustriais, investidores estratégicos,
+        empresas de logística e outros grupos compatíveis com
+        seu perfil operacional.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div class="container footer-inner">
+
+    <img
+      src="assets/images/logo.svg"
+      width="210"
+      height="60"
+      alt="Paranagel">
+
+    <div>
+      <strong>
+        Paranaiguara Armazéns Gerais Ltda
+      </strong>
+
+      <p>
+        Av. Paranaíba · Paranaiguara · GO
+      </p>
+    </div>
+
+    <div class="footer-note">
+      Material comercial para análise de oportunidade.
+    </div>
+
+  </div>
+
 </footer>
 
-<script>
-  const gridFotos = document.getElementById("grid-fotos");
-  for (let i = 1; i <= 20; i++) {
-    const div = document.createElement("div");
-    div.className = "placeholder-foto";
-    div.innerHTML = `<i class="ri-image-add-line"></i><span>Foto ${String(i).padStart(2, "0")}</span>`;
-    gridFotos.appendChild(div);
-  }
 
-  const gridVideos = document.getElementById("grid-videos");
-  for (let i = 1; i <= 2; i++) {
-    const div = document.createElement("div");
-    div.className = "placeholder-video";
-    div.innerHTML = `<i class="ri-play-circle-line"></i><span>Vídeo ${String(i).padStart(2, "0")}</span>`;
-    gridVideos.appendChild(div);
-  }
-</script>
+<!-- LIGHTBOX -->
+<div class="lightbox"
+     id="lightbox"
+     aria-hidden="true">
+
+  <button
+    class="lightbox-close"
+    id="lightboxClose"
+    aria-label="Fechar imagem">
+    ×
+  </button>
+
+  <img
+    id="lightboxImage"
+    alt="Fotografia ampliada da Paranagel">
+
+</div>
+
+
+<script src="assets/js/app.js"></script>
 
 </body>
 </html>
